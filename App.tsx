@@ -5,6 +5,7 @@ import { decodeBase64, decodePCMAudioData, exportToWav } from './services/audioU
 import { LoadingSpinner, PlayIcon, PauseIcon, DownloadIcon, LoadIcon, StopIcon } from './components/icons';
 import WaveformSelector from './components/WaveformSelector';
 import Sequencer from './components/Sequencer';
+import './App.css';
 
 // Define the configuration for each available effect
 export const FX_CONFIG: Record<string, { name: string; color: string; hoverColor: string; activeColor: string }> = {

@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #c0c0c0; /* Classic Windows gray */
+  color: #000000;
+  font-family: 'MS Sans Serif', 'Arial', sans-serif;
+  font-smooth: never;
+  -webkit-font-smoothing: none;
+}
+.grid-cols-16 {
+  grid-template-columns: repeat(16, minmax(0, 1fr));
+}
+
+/* Windows 3.11 style containers and borders */
+.win-panel {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ffffff #808080 #808080 #ffffff;
+  background-color: #c0c0c0;
+  padding: 1rem;
+}
+.win-panel-inset {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #808080 #ffffff #ffffff #808080;
+  background-color: #ffffff;
+  padding: 2px;
+}
+
+/* Button styles */
+.win-button {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ffffff #808080 #808080 #ffffff;
+  background-color: #c0c0c0;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  box-shadow: none;
+  border-radius: 0;
+}
+.win-button:active, .win-button-active {
+  border-color: #808080 #ffffff #ffffff #808080;
+  background-color: #b0b0b0;
+}
+.win-button:disabled {
+  color: #808080;
+  text-shadow: 1px 1px #ffffff;
+  cursor: not-allowed;
+}
+
+/* Form element styles */
+textarea.win-input {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #808080 #ffffff #ffffff #808080;
+  background-color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 0;
+  outline: none;
+  resize: vertical;
+}
+ textarea.win-input:focus {
+  outline: none;
+}
+
+/* Custom range slider */
+input[type="range"].win-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 18px;
+  background: #808080;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #808080;
+  border-top-color: #000;
+  border-left-color: #000;
+  padding: 0;
+  margin: 0.5rem 0;
+}
+input[type="range"].win-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 24px;
+  background: #c0c0c0;
+  cursor: pointer;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ffffff #808080 #808080 #ffffff;
+  margin-top: -6px; /* Center thumb vertically */
+}
+input[type="range"].win-slider::-moz-range-thumb {
+  width: 12px;
+  height: 24px;
+  background: #c0c0c0;
+  cursor: pointer;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ffffff #808080 #808080 #ffffff;
+}
