@@ -1,0 +1,5 @@
+{
+  "name": "AI Music Sampler",
+  "description": "An application to generate, sample, and export music using a text prompt. It focuses on high-quality audio and provides BPM control for rhythmic creations.",
+  "requestFramePermissions": []
+}
